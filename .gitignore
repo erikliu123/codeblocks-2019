@@ -1,0 +1,7 @@
+!.gitignore
+*/bin
+*/obj
+**.*layout
+**.*depend
+**.*cbp
+/uuid_get
