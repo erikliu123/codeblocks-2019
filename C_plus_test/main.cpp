@@ -2,29 +2,29 @@
 
 using namespace std;
 /***
-    ²âÊÔº¯Êı²ÎÊı´ø²»´øconstµÄÓ°Ïì
+    æµ‹è¯•å‡½æ•°å‚æ•°å¸¦ä¸å¸¦constçš„å½±å“
     const CSomeClass& mData
 **/
 class CSomeClass
 {
 public:
 
-    void DisplayMember( ) {/**1.ÎªÊ²Ã´const CSomeClass²»ĞĞ***/
+    void DisplayMember( ) {/**1.ä¸ºä»€ä¹ˆconst CSomeClassä¸è¡Œ***/
         cout<<" DisplayMember( ) is called"<<endl;
     }
 };
 void DisplayAllData(  CSomeClass& mData )//const CSomeClass& mData
 {
-    mData.DisplayMember ( ) ; //±àÒë±¨´í
+    mData.DisplayMember ( ) ; //ç¼–è¯‘æŠ¥é”™
 }
 
-void test(const int *a){/**2.ÎªÊ²Ã´int *aÒ²¿ÉÒÔ£¬·´¹ıÀ´²»ĞĞ***/
+void test(const int *a){/**2.ä¸ºä»€ä¹ˆint *aä¹Ÿå¯ä»¥ï¼Œåè¿‡æ¥ä¸è¡Œ***/
     //a=5; //ERROR
     cout<<"a="<<a<<endl;
 }
 
-void testInt(int *a){/**3. const int ´«½øÀ´»áµ¼ÖÂ±àÒë´íÎó£¬ ¾Í½âÊÍÁËÎªÊ²Ã´1ÊÇ´íÎóµÄ£¬ÀàµÄº¯ÊıµÄµÚÒ»¸ö²ÎÊıÏàµ±ÓÚthis£¬ÎªCSmeClass *const¡£ÏÖÔÚ´«ÈëµÄÊÇconst  CSmeClassµÄ»°£¬¾ÍºÍconst intÒ»Ñù
-                        ²»Õı³£ÁË***/
+void testInt(int *a){/**3. const int ä¼ è¿›æ¥ä¼šå¯¼è‡´ç¼–è¯‘é”™è¯¯ï¼Œ å°±è§£é‡Šäº†ä¸ºä»€ä¹ˆ1æ˜¯é”™è¯¯çš„ï¼Œç±»çš„å‡½æ•°çš„ç¬¬ä¸€ä¸ªå‚æ•°ç›¸å½“äºthisï¼Œä¸ºCSmeClass *constã€‚ç°åœ¨ä¼ å…¥çš„æ˜¯const  CSmeClassçš„è¯ï¼Œå°±å’Œconst intä¸€æ ·
+                        ä¸æ­£å¸¸äº†***/
 
 }
 int main()

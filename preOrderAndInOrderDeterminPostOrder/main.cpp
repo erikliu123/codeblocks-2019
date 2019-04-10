@@ -1,7 +1,7 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-/*ÓÃC++µÄ×Ö·û´®stringÏà¹ØµÄ·½·¨ºó£¬±ÈµÚÒ»´Î¿ìÁËºÜ¶à±¶£¡£¡*/
+/*ç”¨C++çš„å­—ç¬¦ä¸²stringç›¸å…³çš„æ–¹æ³•åï¼Œæ¯”ç¬¬ä¸€æ¬¡å¿«äº†å¾ˆå¤šå€ï¼ï¼*/
 string pre,in,post;
 struct tree{
     tree *left, *right;

@@ -1,29 +1,29 @@
-//£¨Ğ­±ä£©ÖØĞ´+º¯ÊıÖØÔØ
+//ï¼ˆåå˜ï¼‰é‡å†™+å‡½æ•°é‡è½½
 
 #include<iostream>
 using namespace std;
-class Person//¸¸Àà
+class Person//çˆ¶ç±»
 {
 public:
-    virtual  Person& BuyTickets()//¸¸ÀàĞéº¯Êı
+    virtual  Person& BuyTickets()//çˆ¶ç±»è™šå‡½æ•°
     {
-        cout<<"³ÉÈËÂòÆ±-È«Æ±"<<endl;
+        cout<<"æˆäººä¹°ç¥¨-å…¨ç¥¨"<<endl;
         return *this;
     }
 public:
-    string  _name; // ĞÕÃû
+    string  _name; // å§“å
 };
 
-class Student : public Person//×ÓÀà
+class Student : public Person//å­ç±»
 {
 public:
-    virtual Student& BuyTickets()//×ÓÀàĞéº¯Êı
+    virtual Student& BuyTickets()//å­ç±»è™šå‡½æ•°
     {
-        cout<<"Ñ§ÉúÂòÆ±-°ëÆ±"<<endl;
+        cout<<"å­¦ç”Ÿä¹°ç¥¨-åŠç¥¨"<<endl;
         return *this;
     }
 public:
-    int _num ; //Ñ§ºÅ
+    int _num ; //å­¦å·
 };
 void Fun (Person* p)
 {
@@ -44,14 +44,14 @@ void TestOverride ()
     Fun(&s);
 }
 /**
-    overrideÖØĞ´½áÊø£¬
-    ÏÂÃæÊÇÖØ¶¨Òå(Òş²Ø)
+    overrideé‡å†™ç»“æŸï¼Œ
+    ä¸‹é¢æ˜¯é‡å®šä¹‰(éšè—)
 **/
 
 
 /**
-// //1 //2 //3 È«¶¼ÊÇÖØ¶¨Òå
-    2ÊÇÈ¡ÏûÔ­À´µÄĞéº¯Êı
+// //1 //2 //3 å…¨éƒ½æ˜¯é‡å®šä¹‰
+    2æ˜¯å–æ¶ˆåŸæ¥çš„è™šå‡½æ•°
 
 **/
 class A

@@ -24,7 +24,7 @@ public:
         if(  p[1]=='*'){
             if(s1>0 && p[0]=='.')
                 return  isMatch(s.substr(1,s1-1),p)          //s ?*
-                    || isMatch(s,p.substr(2,p1-2));//s ³ıÈ¥.*£¬¿´ºóÃæµÄ
+                    || isMatch(s,p.substr(2,p1-2));//s é™¤å».*ï¼Œçœ‹åé¢çš„
             if(s[0]==p[0])
                 return isMatch(s.substr(1,s1-1),p)          //s ?*
                     || isMatch(s.substr(1,s1-1),p.substr(2,p1-2)) || isMatch(s,p.substr(2,p1-2));
@@ -46,12 +46,12 @@ public:
         if (pi == -1 ) return false;
 
         if(si == -1) {
-            if (p[pi] == '*') return help(s, si, p, pi-2);//´Ó×îºóÒ»¸ö×ÖÄ¸¿ªÊ¼¿´
+            if (p[pi] == '*') return help(s, si, p, pi-2);//ä»æœ€åä¸€ä¸ªå­—æ¯å¼€å§‹çœ‹
             else return false;
         } else {
             if (s[si] == p[pi] || p[pi] == '.') {
                 return help(s, si-1, p, pi-1);
-            } else if (p[pi] == '*') {//Èç¹ûpi=0
+            } else if (p[pi] == '*') {//å¦‚æœpi=0
                 if (p[pi-1] == s[si] || p[pi-1] == '.') {
                     return help(s, si-1, p, pi-2) || help(s, si-1, p, pi) || help(s, si, p, pi-2);
                 } else {

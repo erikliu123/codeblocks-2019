@@ -1,4 +1,4 @@
-/* CCF201803-3 URLÓ³Éä */
+/* CCF201803-3 URLæ˜ å°„ */
 
 #include <iostream>
 #include <ctype.h>
@@ -21,7 +21,7 @@ bool match(string& s, string& t, bool flag)
         }
         else
         {
-            // Æ¥Åä<xxx>
+            // åŒ¹é…<xxx>
             if(t[pt++] != '<')
                 return false;
             if(flag)
@@ -29,7 +29,7 @@ bool match(string& s, string& t, bool flag)
 
             if(t[pt] == 'i')
             {
-                // Æ¥Åä<int>
+                // åŒ¹é…<int>
                 bool ok = false;
                 while(s[ps] && isdigit(s[ps]))
                 {
@@ -41,11 +41,11 @@ bool match(string& s, string& t, bool flag)
                 }
                 if(!ok)
                     return false;
-                pt += 4;//ÒÆµ½>µÄºóÃæ
+                pt += 4;//ç§»åˆ°>çš„åé¢
             }
             else if(t[pt] == 's')
             {
-                // Æ¥Åä<str>
+                // åŒ¹é…<str>
                 bool ok = false;
                 while(s[ps] && s[ps] != '/')
                 {
@@ -56,11 +56,11 @@ bool match(string& s, string& t, bool flag)
                 }
                 if(!ok)
                     return false;
-                pt += 4;//ÒÆµ½str>µÄºóÃæ
+                pt += 4;//ç§»åˆ°str>çš„åé¢
             }
-            else if(t[pt] == 'p')//<path>ÊÇ×îºóÒ»¸ö£¡£¡
+            else if(t[pt] == 'p')//<path>æ˜¯æœ€åä¸€ä¸ªï¼ï¼
             {
-                // Æ¥Åä<path>
+                // åŒ¹é…<path>
                 if(flag)
                     while(s[ps])
                         cout << s[ps++];

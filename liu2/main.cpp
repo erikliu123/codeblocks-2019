@@ -65,7 +65,7 @@ double distant(int first, int last, int &r1, int &r2)
     d=min(d1, d2);
     //new_min=d;
     int k=0;
-    for(int i = first ; i <= last; ++i){//¼ÇÂ¼ÖĞ¼ä½áµãµÄºá×ø±êĞ¡ÓÚdµÄ´óĞ¡
+    for(int i = first ; i <= last; ++i){//è®°å½•ä¸­é—´ç»“ç‚¹çš„æ¨ªåæ ‡å°äºdçš„å¤§å°
         if(fabs(T[mid].x - T[i].x) < d){
             small[k++] = i;
         }
