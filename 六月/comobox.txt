@@ -1,0 +1,60 @@
+	comboBoxCmd.InsertString(NUM_RESET, _T("RESET"));
+	comboBoxCmd.SetItemData(NUM_RESET, NUM_RESET);
+
+	comboBoxCmd.InsertString(NUM_RESET_LUN, _T("RESET_LUN"));
+	comboBoxCmd.SetItemData(NUM_RESET_LUN, NUM_RESET_LUN);
+
+	comboBoxCmd.InsertString(NUM_GET_FEATURE, _T("GET_FEATURE"));
+	comboBoxCmd.SetItemData(NUM_GET_FEATURE, NUM_GET_FEATURE);
+
+	comboBoxCmd.InsertString(NUM_SET_FEATURE, _T("SET_FEATURE"));
+	comboBoxCmd.SetItemData(NUM_SET_FEATURE, NUM_SET_FEATURE);
+
+	comboBoxCmd.InsertString(NUM_READ_PARAMETER_PAGE, _T("READ_PARAMETER_PAGE"));
+	comboBoxCmd.SetItemData(NUM_READ_PARAMETER_PAGE, NUM_READ_PARAMETER_PAGE);
+
+	comboBoxCmd.InsertString(NUM_SEND_CMD, _T("SEND_CMD"));
+	comboBoxCmd.SetItemData(NUM_SEND_CMD, NUM_SEND_CMD);
+
+	comboBoxCmd.InsertString(NUM_READ_ID, _T("READ_ID"));
+	comboBoxCmd.SetItemData(NUM_READ_ID, NUM_READ_ID);
+
+	comboBoxCmd.InsertString(NUM_READ_UQ_ID, _T("READ_UQ_ID"));
+	comboBoxCmd.SetItemData(NUM_READ_UQ_ID, NUM_READ_UQ_ID);
+
+	comboBoxCmd.InsertString(NUM_READ_STATUS, _T("READ_STATUS"));
+	comboBoxCmd.SetItemData(NUM_READ_STATUS, NUM_READ_STATUS);
+
+	comboBoxCmd.InsertString(NUM_READ_STATUS_EH, _T("READ_STATUS_EH"));
+	comboBoxCmd.SetItemData(NUM_READ_STATUS_EH, NUM_READ_STATUS_EH);
+
+	comboBoxCmd.InsertString(NUM_READ_PAGE, _T("READ_PAGE"));
+	comboBoxCmd.SetItemData(NUM_READ_PAGE, NUM_READ_PAGE);
+
+	comboBoxCmd.InsertString(NUM_READ_PAGE_MULTIPLANE, _T("READ_PAGE_MULTIPLANE"));
+	comboBoxCmd.SetItemData(NUM_READ_PAGE_MULTIPLANE, NUM_READ_PAGE_MULTIPLANE);
+
+	comboBoxCmd.InsertString(NUM_PROGRAM_PAGE, _T("PROGRAM_PAGE"));
+	comboBoxCmd.SetItemData(NUM_PROGRAM_PAGE, NUM_PROGRAM_PAGE);
+
+	comboBoxCmd.InsertString(NUM_PROGRAM_PAGE_MULTIPLANE, _T("PROGRAM_PAGE_MULTIPLANE"));
+	comboBoxCmd.SetItemData(NUM_PROGRAM_PAGE_MULTIPLANE, NUM_PROGRAM_PAGE_MULTIPLANE);
+
+	comboBoxCmd.InsertString(NUM_PROGRAM_SUSPEND, _T("PROGRAM_SUSPEND"));
+	comboBoxCmd.SetItemData(NUM_PROGRAM_SUSPEND, NUM_PROGRAM_SUSPEND);
+
+	comboBoxCmd.InsertString(NUM_PROGRAM_RESUME, _T("PROGRAM_RESUME"));
+	comboBoxCmd.SetItemData(NUM_PROGRAM_RESUME, NUM_PROGRAM_RESUME);
+
+	comboBoxCmd.InsertString(NUM_ERASE_BLK, _T("ERASE_BLK"));
+	comboBoxCmd.SetItemData(NUM_ERASE_BLK, NUM_ERASE_BLK);
+
+	comboBoxCmd.InsertString(NUM_ERASE_BLK_MULTIPLANE, _T("ERASE_BLK_MULTIPLANE"));
+	comboBoxCmd.SetItemData(NUM_ERASE_BLK_MULTIPLANE, NUM_ERASE_BLK_MULTIPLANE);
+
+	comboBoxCmd.InsertString(NUM_ERASE_SUSPEND, _T("ERASE_SUSPEND"));
+	comboBoxCmd.SetItemData(NUM_ERASE_SUSPEND, NUM_ERASE_SUSPEND);
+
+	comboBoxCmd.InsertString(NUM_ERASE_RESUME, _T("ERASE_RESUME"));
+	comboBoxCmd.SetItemData(NUM_ERASE_RESUME, NUM_ERASE_RESUME);
+
