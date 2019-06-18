@@ -3,5 +3,5 @@
 */obj
 **.*layout
 **.*depend
-**.*cbp
+!**.*cbp
 /uuid_get
