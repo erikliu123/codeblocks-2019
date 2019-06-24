@@ -1,11 +1,15 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-const string s_str = "\tNUM_([0-9A-Za-z-_\.]+),";
-const string reset_str = "\tRESET([0-9A-Za-z-_\.]*),";
+const string s_str = "\t(NUM_[0-9A-Za-z-_\.]+),";
+const string reset_str = "\t(RESET[0-9A-Za-z-_\.]*),";
+
+const string qt_s_str = "\tNUM_([0-9A-Za-z-_\.]+),";
+const string qt_reset_str = "\tRESET([0-9A-Za-z-_\.]*),";
 ifstream ss("test.txt");
 
 ofstream of("comobox.txt");
+ofstream qt("qt.txt");
 smatch sm;
 int main()
 {
@@ -23,14 +27,14 @@ int main()
             string str=sm[1];
             if(str.find("TOTAL")!=std::string::npos) break;
 
-
-           of<<"\tcomboBoxCmd.InsertString(NUM_"<<sm[1]<<", _T(\""<<str<<"\"));"<<endl;
-           of<<"\tcomboBoxCmd.SetItemData(NUM_"<<sm[1]<<", NUM_"<<sm[1]<<");"<<endl;
+            qt<<"<<"<<"\""<<str<<"\"";
+           cout<<"\tcomboBoxCmd.InsertString(NUM_"<<sm[1]<<", _T(\""<<str<<"\"));"<<endl;
+           cout<<"\tcomboBoxCmd.SetItemData(NUM_"<<sm[1]<<", NUM_"<<sm[1]<<");"<<endl;
            of<<endl;
         }
        // cout<<temp<<temp.length()<<endl;
     }
     of.close();
-
+    qt.close();
     return 0;
 }
